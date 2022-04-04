@@ -1,8 +1,6 @@
-const app = require("./app");
-const connectDatabase = require("./database/database");
-const PORT = 5000;
+const app = require("./api");
 
-connectDatabase();
+const PORT = 5000;
 
 app.listen(PORT, () => {
   console.log("Server is connected on " + PORT);
